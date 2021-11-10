@@ -189,18 +189,18 @@ img {
   fill: var(--active-linc-color, lightblue);
 }
 
-.contacts__footer {
+.footer__contacts {
   list-style: none;
   padding: 0;
 }
 
-.contact__footer {
+.footer__contact {
   display: block;
   text-decoration: none;
   color: var(--contact-footer-color, white);
 }
 
-.contacts__footer li:not(:last-child) {
+.footer__contacts li:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -435,7 +435,7 @@ img {
 
 /* !!! Team block !!! */
 
-.section.band {
+.section--band {
   background-color: var(--background-team);
 }
 
@@ -481,7 +481,7 @@ img {
 
 /* Social Network*/
 
-.network__links {
+.network {
   list-style: none;
   display: flex;
   padding: 16px 32px 30px 32px;
@@ -525,12 +525,12 @@ img {
 
 /* !!! Clients block !!! */
 
-.clients {
+.client {
   list-style: none;
   display: flex;
 }
 
-.client:not(:last-child) {
+.client__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -570,7 +570,7 @@ img {
 
 /* *Footer__Network */
 
-.feedback {
+.footer__feedback {
   margin-right: 70px;
 }
 
