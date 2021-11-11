@@ -23,32 +23,30 @@
     <!-- P__HEADER -->
 
     <header class="header">
-      <div class="container head">
+      <div class="container container--flex">
         <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
 
         <nav class="nav">
           <ul class="nav__item">
             <li><a class="nav__link" href="./index.html">Студия</a></li>
-            <li>
-              <a class="nav__link current" href="./portfolio.html">Портфолио</a>
-            </li>
+            <li><a class="nav__link nav__link--active" href="./portfolio.html">Портфолио</a></li>
             <li><a class="nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contact" href="mailto:info@devstudio.com">
-              <svg class="contact__svg envelope__icon">
+          <li>
+            <a class="contacts__item" href="mailto:info@devstudio.com">
+              <svg class="contact__svg contact__svg--envelope-icon">
                 <use
                   href="./images/svg_directory/svg_sprite.svg#icon-envelope_vector"
                 ></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="contacts__item">
-            <a class="contact" href="tel:+380961111111"
-              ><svg class="contact__svg smartphone__icon">
+          <li>
+            <a class="contacts__item" href="tel:+380961111111"
+              ><svg class="contact__svg contact__svg--smartphone-icon">
                 <use
                   href="./images/svg_directory/svg_sprite.svg#icon-smartphone_vector"
                 ></use></svg
@@ -330,23 +328,23 @@
     <!-- P__FOOTER -->
 
     <footer class="footer">
-      <div class="container bottom">
+      <div class="container container--centering">
         <!-- Feedback -->
-        <div class="feedback">
+        <div class="footer__feedback">
           <a class="logo" href="#"
             >Web<span class="logo__footer">Studio</span></a
           >
 
           <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
 
-          <ul class="contacts__footer">
+          <ul class="footer__contacts">
             <li>
-              <a class="contact__footer" href="mailto:info@devstudio.com"
+              <a class="footer__contact" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="contact__footer" href="tel:+380961111111"
+              <a class="footer__contact" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -355,12 +353,12 @@
         <!-- /Feedback -->
 
         <!-- Footer__Network -->
-        <div class="footer__network">
-          <h3 class="features__title bottom">присоединяйтесь</h3>
-          <ul class="network__links bottom">
+        <div class="footer-network">
+          <h3 class="features__title features__title--positioning">присоединяйтесь</h3>
+          <ul class="network network--positioning">
             <li class="network__into">
               <a class="network__link" href="#">
-                <svg class="network__svg bottom">
+                <svg class="network__svg network__svg--positioning">
                   <use
                     href="./images/svg_directory/svg_sprite.svg#icon-instagram"
                   ></use>
@@ -369,7 +367,7 @@
             </li>
             <li class="network__into">
               <a class="network__link" href="#">
-                <svg class="network__svg bottom">
+                <svg class="network__svg network__svg--positioning">
                   <use
                     href="./images/svg_directory/svg_sprite.svg#icon-twitter"
                   ></use>
@@ -378,7 +376,7 @@
             </li>
             <li class="network__into">
               <a class="network__link" href="#">
-                <svg class="network__svg bottom">
+                <svg class="network__svg network__svg--positioning">
                   <use
                     href="./images/svg_directory/svg_sprite.svg#icon-facebook"
                   ></use>
@@ -387,7 +385,7 @@
             </li>
             <li class="network__into">
               <a class="network__link" href="#">
-                <svg class="network__svg bottom">
+                <svg class="network__svg network__svg--positioning">
                   <use
                     href="./images/svg_directory/svg_sprite.svg#icon-linkedin"
                   ></use>
@@ -398,7 +396,7 @@
         </div>
 
         <div class="form__footer">
-          <h3 class="features__title bottom">Подпишитесь на рассылку</h3>
+          <h3 class="features__title features__title--positioning ">Подпишитесь на рассылку</h3>
           <form class="form__footer-item"
             <label>
               <input
@@ -408,7 +406,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="main__button form" type="submit">
+            <button class="main__button main__button--flex" type="submit">
               Подписаться<svg class="form-footer__svg">
                 <use
                   href="./images/svg_directory/svg_sprite.svg#icon-telegram_vector"
@@ -420,5 +418,6 @@
       </div>
       <!-- /container-->
     </footer>
+    
   </body>
 </html>

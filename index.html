@@ -28,7 +28,7 @@
 
         <nav class="nav">
           <ul class="nav__item">
-            <li><a class="nav__link current" href="./index.html">Студия</a></li>
+            <li><a class="nav__link nav__link--active" href="./index.html">Студия</a></li>
             <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
             <li><a class="nav__link" href="#">Контакты</a></li>
           </ul>
@@ -411,7 +411,7 @@
                 </svg>
               </a>
             </li>
-            <li class="client">
+            <li class="client__item">
               <a class="client__brand" href="#">
                 <svg class="client__svg">
                   <use
@@ -586,12 +586,12 @@
         <!-- /Feedback -->
 
         <!-- Footer__Network -->
-        <div class="footer__network">
-          <h3 class="features__title bottom">присоединяйтесь</h3>
-          <ul class="network__links bottom">
+        <div class="footer-network">
+          <h3 class="features__title features__title--positioning">присоединяйтесь</h3>
+          <ul class="network network--positioning">
             <li class="network__into">
               <a class="network__link" href="#">
-                <svg class="network__svg bottom">
+                <svg class="network__svg network__svg--positioning">
                   <use
                     href="./images/svg_directory/svg_sprite.svg#icon-instagram"
                   ></use>
@@ -600,7 +600,7 @@
             </li>
             <li class="network__into">
               <a class="network__link" href="#">
-                <svg class="network__svg bottom">
+                <svg class="network__svg network__svg--positioning">
                   <use
                     href="./images/svg_directory/svg_sprite.svg#icon-twitter"
                   ></use>
@@ -609,7 +609,7 @@
             </li>
             <li class="network__into">
               <a class="network__link" href="#">
-                <svg class="network__svg bottom">
+                <svg class="network__svg network__svg--positioning">
                   <use
                     href="./images/svg_directory/svg_sprite.svg#icon-facebook"
                   ></use>
@@ -618,7 +618,7 @@
             </li>
             <li class="network__into">
               <a class="network__link" href="#">
-                <svg class="network__svg bottom">
+                <svg class="network__svg network__svg--positioning">
                   <use
                     href="./images/svg_directory/svg_sprite.svg#icon-linkedin"
                   ></use>
@@ -629,7 +629,7 @@
         </div>
 
         <div class="form__footer">
-          <h3 class="features__title bottom">Подпишитесь на рассылку</h3>
+          <h3 class="features__title features__title--positioning ">Подпишитесь на рассылку</h3>
           <form class="form__footer-item"
             <label>
               <input
@@ -639,7 +639,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="main__button form" type="submit">
+            <button class="main__button main__button--flex" type="submit">
               Подписаться<svg class="form-footer__svg">
                 <use
                   href="./images/svg_directory/svg_sprite.svg#icon-telegram_vector"
