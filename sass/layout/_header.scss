@@ -1,0 +1,124 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+
+  background-color: var(--header-white, white);
+  border-bottom: 1px solid var(--header-border-color);
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Navigation */
+
+.nav__item {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav__item li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+
+  display: block;
+  padding-top: 32px;
+}
+
+/* Contacts */
+
+.contacts {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  padding: 0;
+  margin-left: auto;
+}
+
+.contacts li:not(:last-child) {
+  /* всем элементам кроме последнего */
+  margin-right: 30px;
+}
+
+.contacts__item {
+  text-decoration: none;
+  color: var(--text-color, gray);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__svg {
+  margin-right: 10px;
+  fill: var(--social-network-rest, gray);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__svg--envelope-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.contact__svg--smartphone-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.contacts__item:hover .contact__svg,
+.contacts__item:focus .contact__svg {
+  fill: var(--active-linc-color, lightblue);
+}
+
+/* Nav, Contacts --elements condition */
+
+.nav__link,
+.contacts__item {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.contacts__item:hover,
+.contacts__item:focus {
+  color: var(--active-linc-color, lightblue);
+}
+
+.nav__link::after {
+  display: block;
+  content: "";
+  margin-top: 28px;
+
+  width: inherit;
+  height: 4px;
+  background-color: var(--active-linc-color);
+  border-radius: 2px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0;
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+  opacity: 1;
+}
+
+.nav__link--active {
+  color: var(--active-linc-color, lightblue);
+}

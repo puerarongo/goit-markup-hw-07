@@ -1,0 +1,17 @@
+/* !!! Containers !!! */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container--flex {
+  display: flex;
+  /* центрирует контент по вертикале */
+  align-items: center;
+}
+
+.container--centering {
+  display: flex;
+}
