@@ -19,11 +19,11 @@
   border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.network__link:hover,
-.network__link:focus {
-  background: var(--active-linc-color, teal);
+  &:hover,
+  &:focus {
+    background: var(--active-linc-color, teal);
+  }
 }
 
 .network__svg {
@@ -33,9 +33,9 @@
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.network__link:hover .network__svg,
-.network__link:focus .network__svg {
-  fill: var(--header-white, white);
+  .network__link:hover &,
+  .network__link:focus & {
+    fill: var(--header-white, white);
+  }
 }

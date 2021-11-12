@@ -8,10 +8,10 @@
 
 .pictures__item {
   position: relative; /* без этого атрибута появляются 3px внизу*/
-}
 
-.pictures__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .pictures__annotation {

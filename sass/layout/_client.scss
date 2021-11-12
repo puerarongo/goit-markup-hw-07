@@ -20,11 +20,11 @@
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client__brand:hover,
-.client__brand:focus {
-  border: 1px solid var(--active-linc-color, teal);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--active-linc-color, teal);
+  }
 }
 
 .client__svg {
@@ -34,9 +34,9 @@
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client__brand:hover .client__svg,
-.client__brand:focus .client__svg {
-  fill: var(--active-linc-color, teal);
+  .client__brand:hover &,
+  .client__brand:focus & {
+    fill: var(--active-linc-color, teal);
+  }
 }

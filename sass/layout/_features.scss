@@ -9,23 +9,23 @@
 
 .features__item {
   width: 270px;
-}
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
-}
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.features__item::before {
-  display: block;
-  content: "";
+  &::before {
+    display: block;
+    content: "";
 
-  height: 120px;
-  margin-bottom: 30px;
+    height: 120px;
+    margin-bottom: 30px;
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-color: var(--background-team, gray);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: var(--background-team, gray);
+  }
 }
 
 .features__item.antenna__icon::before {
